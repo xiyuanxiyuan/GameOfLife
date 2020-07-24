@@ -12,7 +12,7 @@ public class GameInterface {
         jFrame=new JFrame();//主框架
         jPanel=new JPanel();
         jLabels=new JLabel[height][width];
-        ImageIcon imageIcon=new ImageIcon("like.png");
+        //ImageIcon imageIcon=new ImageIcon("like.png");
 
         for(int i=0;i<height;i++){
             for(int j=0;j<width;j++){//初始化每个小格子的内容

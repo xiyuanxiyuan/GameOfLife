@@ -20,15 +20,15 @@ public class GameOfLifeMain {
 
     public void init(){//初始化
         Scanner scanner=new Scanner(System.in);
-        System.out.println("高？");
+        System.out.println("游戏世界的高度？<建议100>");
         height=scanner.nextInt();
-        System.out.println("宽？");
+        System.out.println("游戏世界的宽度？<建议100>");
         width=scanner.nextInt();
-        System.out.println("最大密度？");
+        System.out.println("最大密度？(周围数目大于等于多少时会死亡)<建议4>");
         maxDensity=scanner.nextInt();
-        System.out.println("稳定点？");
+        System.out.println("稳定点？(数目在稳定点以下时，状态不变，大于等于稳定点时会出生)<建议3>");
         midDensity=scanner.nextInt();
-        System.out.println("最小密度？");
+        System.out.println("最小密度？(周围数目小于等于多少时会死亡)<建议1>");
         minDensity=scanner.nextInt();
         gameInterface=new GameInterface(height,width);
         Random random=new Random();//随机生成世界
@@ -280,7 +280,7 @@ public class GameOfLifeMain {
         } catch (AWTException e) {
             e.printStackTrace();
         }
-        robot.delay(500);
+        robot.delay(100);
 
     }
 }
